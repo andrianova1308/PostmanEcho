@@ -12,6 +12,7 @@ public class PostmanEchoTest {
         // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
+                .contentType("text/plain; charset=UTF-8")
                 .body("данные") // отправляемые данные (заголовки и query можно выставлять аналогично)
                 // Выполняемые действия
                 .when()
